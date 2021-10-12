@@ -43,6 +43,7 @@ zip = { version = "0.5.8", optional = true }
 rand = {version = "0.8", optional = true}
 dmsort = {version = "1.0.0", optional = true}
 toml-dep = { version = "0.5.8", package="toml", optional = true }
+chrono-english = { version = "0.1.6", optional = true }
 
 [features]
 default = ["cellularnoise", "dmi", "file", "git", "http", "json", "log", "noise", "sql", "toml", "url"]
@@ -61,6 +62,7 @@ url = ["url-dep", "percent-encoding"]
 
 # non-default features
 hash = ["base64", "const-random", "md-5", "hex", "sha-1", "sha2",  "twox-hash"]
+time = ["chrono-english", "chrono"]
 unzip = ["zip", "jobs"]
 worleynoise = ["rand","dmsort"]
 

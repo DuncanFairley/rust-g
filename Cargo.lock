@@ -205,6 +205,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "chrono-english"
+version = "0.1.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0be5180df5f7c41fc2416bc038bc8d78d44db8136c415b94ccbc95f523dc38e9"
+dependencies = [
+ "chrono",
+ "scanlex",
+ "time 0.1.43",
+]
+
+[[package]]
 name = "color_quant"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1506,6 +1517,7 @@ version = "0.5.0"
 dependencies = [
  "base64 0.13.0",
  "chrono",
+ "chrono-english",
  "const-random",
  "dashmap",
  "dmsort",
@@ -1571,6 +1583,12 @@ name = "ryu"
 version = "1.0.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "71d301d4193d031abdd79ff7e3dd721168a9572ef3fe51a1517aba235bd8f86e"
+
+[[package]]
+name = "scanlex"
+version = "0.1.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "088c5d71572124929ea7549a8ce98e1a6fd33d0a38367b09027b382e67c033db"
 
 [[package]]
 name = "schannel"
